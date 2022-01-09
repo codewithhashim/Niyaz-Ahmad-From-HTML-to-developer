@@ -129,5 +129,68 @@ ul li {
   margin-top: -40px;
   margin-left: 40px;
   position: relative;
+  z-index: 1;
+  transition: all 5s ease-in-out;
+}
+.div3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-top: -100px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Pseudo Class */
+.div2:hover {
   z-index: 4;
+  background-color: salmon;
+}
+
+/* focus */
+input:focus {
+  outline: none;
+  border: 4px solid green;
+}
+
+.only:only-child {
+  font-size: 50px;
+}
+
+/* Pseudo Element */
+h1::first-letter {
+  color: blue;
+  font-size: 40px;
+}
+p::first-line {
+  font-size: 30px;
+}
+.cool-list li::before {
+  content: "🙈";
+}
+
+.cool-list li::after {
+  content: "🙈";
+}
+.cool-list {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  margin: 20px;
+  border: 4px solid green;
+  outline: 6px solid red;
+}
+
+.class {
+  display: flex;
+  /* prefix */
+  -moz-animation: mymove 1s ease infinite;
+
+  /* -o-animation: ;
+  -webkit-animation: ;
+  -ms-flex: ;
+  /* safari support */
+  /* -webkit-flex: ; */
 }
